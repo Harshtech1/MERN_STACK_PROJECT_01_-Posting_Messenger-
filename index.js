@@ -39,7 +39,7 @@ app.use((req, res) => {
   res.status(404).render("error", {
     title: "Page Not Found",
     message: "404 - Page Not Found",
-    error: { message: "The page you're looking for doesn't exist" }
+    error: { message: "The page you're looking for doesn't exist" },
   });
 });
 
@@ -49,7 +49,7 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).render("error", {
     title: "Error",
     message: err.message || "Something went wrong",
-    error: process.env.NODE_ENV === "development" ? err : {}
+    error: process.env.NODE_ENV === "development" ? err : {},
   });
 });
 
