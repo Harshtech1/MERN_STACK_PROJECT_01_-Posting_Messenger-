@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.edit-prompt {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-prompt label {
+  font-weight: bold;
+  color: #444;
+}
+
+.edit-prompt input,
+.edit-prompt textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.edit-prompt input:focus,
+.edit-prompt textarea:focus {
+  border-color: #007bff;
+}
+
+.edit-prompt button {
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #007bff;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.edit-prompt button:hover {
+  background: #0056b3;
+}
+
+.edit-prompt a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  background: #6c757d;
+  color: #fff;
+  transition: background 0.3s;
+}
+
+.edit-prompt a:hover {
+  background: #5a6268;
+}

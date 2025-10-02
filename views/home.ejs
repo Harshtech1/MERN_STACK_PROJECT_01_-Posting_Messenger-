@@ -1,0 +1,40 @@
+<%- include('partials/header') %>
+
+<div class="home-container">
+  <div class="hero-section">
+    <h1 class="hero-title">Welcome to Prompt Manager</h1>
+    <p class="hero-subtitle">Manage your prompts and messages efficiently</p>
+    <div class="hero-buttons">
+      <a href="/prompts" class="btn btn-primary">View All Prompts</a>
+      <a href="/prompts/new" class="btn btn-secondary">Create New Prompt</a>
+    </div>
+  </div>
+
+  <div class="features-section">
+    <h2 class="features-title">Features</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📝</div>
+        <h3>Create Prompts</h3>
+        <p>Easily create and store your prompts with sender and receiver information</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">👀</div>
+        <h3>View All</h3>
+        <p>Browse through all your saved prompts in a clean, organized interface</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✏️</div>
+        <h3>Edit & Update</h3>
+        <p>Modify your existing prompts whenever needed</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🗑️</div>
+        <h3>Delete</h3>
+        <p>Remove unwanted prompts with a single click</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

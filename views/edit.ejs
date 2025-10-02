@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Prompt</title>
+    <link rel="stylesheet" href="/edit.css" />
+  </head>
+  <body>
+    <h1>Edit Prompt</h1>
+
+    <form
+      class="edit-prompt"
+      action="/prompts/edit/<%= prompt._id %>?_method=PUT"
+      method="POST"
+    >
+      <label for="from">From:</label>
+      <input
+        type="text"
+        name="from"
+        id="from"
+        value="<%= prompt.from %>"
+        required
+      />
+
+      <label for="to">To:</label>
+      <input type="text" name="to" id="to" value="<%= prompt.to %>" required />
+
+      <label for="message">Message:</label>
+      <textarea name="message" id="message" rows="5" required>
+<%= prompt.message %></textarea
+      >
+
+      <button type="submit">💾 Save Changes</button>
+    </form>
+  </body>
+</html>
